@@ -93,6 +93,7 @@ class Auditable {
 		$cs->object_type = get_class($model); // Manual
 		$cs->object_id = $model->$primarykey; // Manual
 		$cs->user_id = (\Auth::user() instanceof \User) ? \Auth::user()->id : 0;
+		$cs->user_session_id = Session::get('user_session_id');
 		$cs->name = $this->getName($model);
 		$cs->save();
 		return $cs;
