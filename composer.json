@@ -1,5 +1,5 @@
 {
-    "name": "cschand/laravel-auditable",
+    "name": "rebin/laravel-auditable",
     "description": "An easy to implement attribute audit log for Eloquent ORM in Laravel 4.X.",
     "authors": [
         {
